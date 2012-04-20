@@ -11,9 +11,8 @@ Gem::Specification.new do |s|
   s.homepage    = ""
   s.summary     = %q{Brazilian Documents Validations}
   s.description = %q{CPF & CNPJ...}
-  s.add_dependency('rails','3.0.7')
-  # s.add_dependency('rails','3.0.7')
-
+  s.add_dependency('rails','>= 3.0.7')
+  
   s.rubyforge_project = "brazilian-documents-validations"
 
   s.files         = `git ls-files`.split("\n")
