@@ -5,7 +5,6 @@ require "brazilian-documents-validations/version"
 Gem::Specification.new do |s|
   s.name             = "brazilian-documents-validations"
   s.version          = BrazilianDocumentsValidations::VERSION
-  s.date             = Date.today.to_s
   s.authors          = ["Maiz Lulkin"]
   s.email            = ["maiz@lulk.in"]
   s.summary          = %q{Brazilian Documents Validations}
