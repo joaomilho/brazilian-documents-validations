@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/joaomilho/brazilian-documents-validations.png?branch=master)](https://travis-ci.org/joaomilho/brazilian-documents-validations.)
 
-[![Code climate](https://codeclimate.com/github/joaomilho/brazilian-documents-validations..png)](https://codeclimate.com/github/joaomilho/brazilian-documents-validations.)
+[![Code Climate](https://codeclimate.com/github/joaomilho/brazilian-documents-validations.png)](https://codeclimate.com/github/joaomilho/brazilian-documents-validations)
 
 ## Brazilian Documents Validations
 
