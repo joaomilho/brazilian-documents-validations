@@ -8,7 +8,7 @@ class CNPJTest < ActiveSupport::TestCase
   test "should not be valid" do
     invalids = (0..9).map{|i| i.to_s * 14 }
     for invalid in invalids
-      assert ! CNPJ.valid?(invalid), "Testando inválido #{invalid}"
+      assert ! CNPJ.valid?(invalid)
     end
   end
 
