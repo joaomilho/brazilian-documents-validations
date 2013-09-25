@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/test_helper'
+require_relative 'test_helper'
 
 class CNPJTest < ActiveSupport::TestCase
   test "should validate softas cnpj" do

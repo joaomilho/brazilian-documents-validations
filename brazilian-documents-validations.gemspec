@@ -3,21 +3,20 @@ $:.push File.expand_path("../lib", __FILE__)
 require "brazilian-documents-validations/version"
 
 Gem::Specification.new do |s|
-  s.name        = "brazilian-documents-validations"
-  s.version     = Brazilian::Documents::Validations::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Juan Maiz @joaomilho"]
-  s.email       = ["juanmaiz@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{Brazilian Documents Validations}
-  s.description = %q{CPF & CNPJ...}
-  s.add_dependency('rails','3.0.7')
-  # s.add_dependency('rails','3.0.7')
+  s.name             = "brazilian-documents-validations"
+  s.version          = BrazilianDocumentsValidations::VERSION
+  s.date             = Date.today.to_s
+  s.authors          = ["Maiz Lulkin"]
+  s.email            = ["maiz@lulk.in"]
+  s.summary          = %q{Brazilian Documents Validations}
+  s.description      = %q{Validations for CPF and CNPJ}
+  s.homepage         = %q{https://github.com/joaomilho/brazilian-documents-validations}
+  s.extra_rdoc_files = ["README.md"]
+  s.rdoc_options     = ["--charset=UTF-8"]
+  s.require_paths    = ["lib"]
+  s.files            = `git ls-files --  lib/* bin/* README.md`.split("\n")
 
-  s.rubyforge_project = "brazilian-documents-validations"
+  s.add_dependency 'activemodel'
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.add_development_dependency 'rake'
 end

@@ -1,9 +1,13 @@
 module CPF
 
-  BLACK_LIST = (0..9).map{|i| i.to_s * 11 } << '12345678909' unless defined?(BLACK_LIST)
+  BLACK_LIST = (0..9).map{|i| i.to_s * 11 } << '12345678909'
 
-  def self.mock
-    ns = Array.new(9){ (rand*9).round }
+  def self.mock size=1
+    size == 1 ? generate : size.times.map{ generate }
+  end
+
+  def self.generate
+    ns = Array.new(9){ rand(9) }
     rec = 10
     d1 = ns.inject(0){|s,i| s = s + i*rec; rec -= 1; s }
 
@@ -14,7 +18,7 @@ module CPF
     d2 = 11 - ( d2 % 11 )
     d2 = 0 if d2 >= 10
     ns << d1 << d2
-    ns.join   
+    ns.join
   end
 
   def self.valid?(cpf)

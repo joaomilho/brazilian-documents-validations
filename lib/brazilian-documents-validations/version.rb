@@ -1,7 +1,3 @@
-module Brazilian
-  module Documents
-    module Validations
-      VERSION = "0.0.3"
-    end
-  end
+module BrazilianDocumentsValidations
+  VERSION = "0.1.0"
 end
